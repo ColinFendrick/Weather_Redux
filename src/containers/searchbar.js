@@ -30,6 +30,6 @@ export default class SearchBar extends Component {
           <button type='submit' className='btn btn-secondary'>Submit</button>
         </span>
       </form>
-    )
+    );
   }
 }
