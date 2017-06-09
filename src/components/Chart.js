@@ -12,6 +12,6 @@ export default props => (
       <SparklinesLine color={props.color} />
       <SparklinesReferenceLine type='avg' />
     </Sparklines>
-    <div>{average(props.data)}</div>
+    <div>{average(props.data)} {props.units}</div>
   </div>
 );
