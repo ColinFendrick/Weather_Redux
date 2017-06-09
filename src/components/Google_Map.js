@@ -6,14 +6,15 @@ class GoogleMap extends Component {
       zoom: 12,
       center: {
         lat: this.props.lat,
-        lng: this.props.lon
+        lng: this.props.lng
       }
     });
   }
 
   render() {
     return <div ref='googlemap'
-    style={{'height': '200px', 'width': '250px'}}/>;
+      style={{'height': '200px', 'width': '250px'}}
+    />;
   }
 }
 
