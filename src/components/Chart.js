@@ -1,12 +1,17 @@
-import React from 'react'
-import { Sparklines, SparklinesLine } from 'react-sparklines';
+import React from 'react';
+import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-sparklines';
+import _ from 'lodash';
 
-const Chart = props => (
+function average(data) {
+  return _.round(_.sum(data)/data.length);
+}
+
+export default props => (
   <div>
     <Sparklines data={props.data} width={180} height={100}>
       <SparklinesLine color={props.color} />
+      <SparklinesReferenceLine type='avg' />
     </Sparklines>
+    <div>{average(props.data)}</div>
   </div>
-)
-
-export default Chart
+);

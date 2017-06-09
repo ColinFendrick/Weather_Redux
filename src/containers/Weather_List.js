@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Chart from '../components/chart'
+import Test from '../components/Test'
 
 class WeatherList extends Component {
   renderWeather(cityData) {
